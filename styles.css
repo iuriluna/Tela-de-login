@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #0A0A10;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px 0px;
+    max-width: 414px;
+    min-height: 100vh;
+    gap: 12px;
+    position: relative;
+    padding-top: 55px;
+}
+
+.blur{
+    width: 414px;
+    height: 280px;
+    position: absolute;
+    z-index: -1;
+    background: #FFFFFF;
+    opacity: 0.25;
+    filter: blur(24px);
+    border-radius: 200%;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.containerInput{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: rgb(255, 255, 255);
+    margin: 4px 0 ;
+    
+}
+
+input{
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+    padding-left: 4px;
+}
+
+input::placeholder{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #d6cdcd;
+}
+
+.btnLogin{
+    width: 100%;
+    height: 68px;
+
+    background: #D93856;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 2px;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+.btnLogin:hover{
+    background: #fd2149;
+}
+
+.btnLogin:active{
+    opacity: 0.6;
+}
+
+i{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 2px;
+}
+
+.btnGoogle{
+    width: 100%;
+    height: 68px;
+
+    background: rgba(255, 255, 255, 0.14);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnGoogle:hover{
+    opacity: 0.8;
+}
+
+.btnGoogle:active{
+    opacity: 0.6;
+}
+
+.logoGoogle{
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.containerLink{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+a{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    width: auto;
+    line-height: 16px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    width: max-content;
+}
+
+a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+    
+}
+
+a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3px;
+    left: 0;
+}
+
+span{
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+
